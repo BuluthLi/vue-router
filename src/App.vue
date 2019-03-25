@@ -110,3 +110,37 @@ export default {
 <style scoped>
 </style>
 
+//新增的路由传参
+//<template>
+  //<div id="app">
+    //<img src="./assets/logo.png">
+    //<router-link :to="{path:'/',params:{value:'首页'}}" class="router-link-item">首页</router-link>
+   // <router-link to="/about" class="router-link-item">关于</router-link>
+  //  <router-view></router-view>
+ // </div>
+//</template>
+
+//<script>
+//import HelloWorld from "./components/HelloWorld";
+
+//export default {
+//  name: "App",
+ // created: function() {
+//    console.log(this.$router);
+//    console.log(this.$route);
+//  },
+ // mounted: function() {
+ //   console.log(1);
+ //   this.$router.push({
+  //    name: "about",
+  //    params: {
+  //      value: "关于"
+  //    }
+  //  });
+ // },
+  //components: {
+ //   HelloWorld
+  //}
+//};
+//</script>
+
