@@ -1,4 +1,6 @@
-//router-link和router-view 存在一个就近原则，否则就是用命名视图
+//router-link和router-view 存在一个就近原则（其实是路由的名字正则匹配事否严格，从而产生二级路由），否则就是用命名视图、（二级路由About.vue）
+// 路由传参问题（Header.vue）
+// 待解决（vue-router的history模式，目前采用的hash模式带#）
 <template>
   <div id="app">
     <!-- <div class="side-nav">
@@ -112,35 +114,39 @@ export default {
 
 //新增的路由传参
 //<template>
-  //<div id="app">
-    //<img src="./assets/logo.png">
-    //<router-link :to="{path:'/',params:{value:'首页'}}" class="router-link-item">首页</router-link>
-   // <router-link to="/about" class="router-link-item">关于</router-link>
-  //  <router-view></router-view>
- // </div>
-//</template>
+  //
+  <div id="app">
+    //
+    <img src="./assets/logo.png">
+    //
+    <router-link :to="{path:'/',params:{value:'首页'}}" class="router-link-item">首页</router-link>//
+    <router-link to="/about" class="router-link-item">关于</router-link>//
+    <router-view></router-view>//
+  </div>//
+</template>
 
 //<script>
 //import HelloWorld from "./components/HelloWorld";
 
 //export default {
 //  name: "App",
- // created: function() {
+// created: function() {
 //    console.log(this.$router);
 //    console.log(this.$route);
 //  },
- // mounted: function() {
- //   console.log(1);
- //   this.$router.push({
-  //    name: "about",
-  //    params: {
-  //      value: "关于"
-  //    }
-  //  });
- // },
-  //components: {
- //   HelloWorld
-  //}
+// mounted: function() {
+//   console.log(1);
+//   this.$router.push({
+//    name: "about",
+//    params: {
+//      value: "关于"
+//    }
+//  });
+// },
+//components: {
+//   HelloWorld
+//}
 //};
-//</script>
+//
+</script>
 
