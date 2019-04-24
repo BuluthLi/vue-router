@@ -9,8 +9,8 @@
       <router-link to="/contact" class="nav-item">联系我们</router-link>
     </div>-->
     <Header></Header>
-    <!-- <router-view class="hai"/> -->
-    <router-view class="xu" name="a"/>
+    <router-view class="hai"/>
+    <!-- <router-view class="xu" name="a"/> -->
     <Footer></Footer>
   </div>
 </template>
@@ -105,22 +105,16 @@ export default {
 // );
 
 // export default RouteConfigExample;
-</script>
-
-<style scoped>
-</style>
-
-//新增的路由传参
-//<template>
-  //<div id="app">
-    //<img src="./assets/logo.png">
-    //<router-link :to="{path:'/',params:{value:'首页'}}" class="router-link-item">首页</router-link>
-   // <router-link to="/about" class="router-link-item">关于</router-link>
-  //  <router-view></router-view>
- // </div>
-//</template>
-
-//<script>
+// 新增的路由传参
+// <template>
+//   <div id="app">
+//     <img src="./assets/logo.png">
+//     <router-link :to="{path:'/',params:{value:'首页'}}" class="router-link-item">首页</router-link>
+//     <router-link to="/about" class="router-link-item">关于</router-link>
+//    <router-view></router-view>
+//   </div>
+// </template>
+//  <script>
 //import HelloWorld from "./components/HelloWorld";
 
 //export default {
@@ -143,4 +137,9 @@ export default {
   //}
 //};
 //</script>
+</script>
+
+<style scoped>
+</style>
+
 

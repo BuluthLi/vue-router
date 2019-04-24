@@ -12,7 +12,7 @@
       <!-- 就近原则第二层 -->
       <!-- <router-view class="xu"/> -->
       <!-- 命名路由 -->
-      <router-view class="hai" name="b"/>
+      <router-view class="hai"/>
     </div>
   </div>
 </template>
